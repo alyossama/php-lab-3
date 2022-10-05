@@ -31,6 +31,18 @@ session_start();
                 <p class="h1 text-center my-2">AAST_BIS Registration</p>
             </div>
             <div class="col-6">
+                <?php
+                if (isset($_SESSION['old-values']) && empty($_SESSION['validation'])) {
+
+
+                ?>
+                    <div class="alert alert-success">
+                        <p>Registration success ... You input is down the page</p>
+                    </div>
+                <?php
+                }
+                ?>
+
                 <small class="text-danger my-2">* Required field</small>
                 <!-- Start registration form -->
                 <form class="col-12" action="./app/Requests/RegisterRequest.php" method="POST">
