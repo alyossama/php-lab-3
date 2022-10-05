@@ -30,6 +30,7 @@ session_start();
             <div class="col-12 my-2">
                 <p class="h1 text-center my-2">AAST_BIS Registration</p>
             </div>
+            <!-- Start Message shown when successfully registered -->
             <div class="col-6">
                 <?php
                 if (isset($_SESSION['old-values']) && empty($_SESSION['validation'])) {
@@ -42,7 +43,7 @@ session_start();
                 <?php
                 }
                 ?>
-
+                <!-- End Message shown when successfully registered -->
                 <small class="text-danger my-2">* Required field</small>
                 <!-- Start registration form -->
                 <form class="col-12" action="./app/Requests/RegisterRequest.php" method="POST">
