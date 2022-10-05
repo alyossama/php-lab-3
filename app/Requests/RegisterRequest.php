@@ -4,7 +4,7 @@ session_start();
 
 
 // In this page all the validation errors will be save in the $_SESSION['validation'] array,
-// Errors weill be sent to index page using session
+// Errors will be sent to index page using session
 
 // some common validation errors
 $required = "*This field is required";
